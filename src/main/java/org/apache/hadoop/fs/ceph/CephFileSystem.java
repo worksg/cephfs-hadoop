@@ -667,4 +667,9 @@ public class CephFileSystem extends FileSystem {
         CephConfigKeys.CEPH_PORT_DEFAULT);
   }
 
+  @Override
+  public String getScheme() {
+    return "ceph";
+  }
+
   }
